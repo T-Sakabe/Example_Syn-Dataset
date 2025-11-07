@@ -4,7 +4,7 @@
 Here's an overview of the proposed dataset generation framework:
 
 <p align="center">
-  <img src="./image/Framework_Overview.png" alt="Overview of the proposed IRT+CVAE framework" width="600"><br>
+  <img src="./image/Framework_Overview.png" alt="Overview of the proposed IRT+CVAE framework" width="100%"><br>
 </p>
 
 Each Syn-Dataset is an enhanced version of an existing benchmark dataset, designed to maintain the original structure:
@@ -26,7 +26,7 @@ To address this issue, our proposed framework automatically generates datasets w
 Below is an example of generated Syn-MNIST images with specified difficulty and discrimination parameters.
 
 <p align="center">
-  <img src="./image/Syn-MNIST_Examples.png" alt="Examples of Syn-MNIST generated images by difficulty and discrimination" width="600"><br>
+  <img src="./image/Syn-MNIST_Examples.png" alt="Examples of Syn-MNIST generated images by difficulty and discrimination" width="100%"><br>
 </p>
 
 ## Get the Data
