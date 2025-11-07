@@ -44,15 +44,20 @@ Here is how to load and display images in Python:
 import pandas as pd
 import matplotlib.pyplot as plt
 
-imgs = pd.read_csv("Syn-MNIST_imgs.csv", sep=',', header=None).values
-labels = pd.read_csv("Syn-MNIST_labels.csv", sep=',', header=None).values
+# Load dataset
+imgs = pd.read_csv("Syn-MNIST_imgs.csv", header=None).values
+labels = pd.read_csv("Syn-MNIST_labels.csv", header=None).values
 
-print("Images shape:", imgs.shape)
-print("Labels shape:", labels.shape)
+print(f"Images shape: {imgs.shape}")
+print(f"Labels shape: {labels.shape}")
 
-i = 100
-plt.imshow(imgs.reshape(imgs.shape[0], 28, 28)[i], cmap='gray', vmin=0, vmax=255)
-plt.title(f"Label: {labels[i][0]}")
+# Display a sample image
+index = 0
+image = imgs[index].reshape(28, 28)
+label = labels[index, 0]
+
+plt.imshow(image, cmap="gray", vmin=0, vmax=255)
+plt.title(f"Label: {label}")
 plt.show()
 ```
 
