@@ -3,9 +3,9 @@
 ## Overview
 “Syn-Datasets” provide synthetic image-classification datasets generated via Item Response Theory (IRT).  
 They are designed as drop-in replacements/enhancements for the original datasets:
-- **Syn-MNIST**: based on MNIST (images shape: 70000×784, labels: 70000×1)  
-- **Syn-Fashion-MNIST**: based on Fashion-MNIST (images shape: 70000×784, labels: 70000×1)  
-- **Syn-FER-2013**: based on FER-2013 (images shape: 35882×2304, labels: 35882×1)  
+- **Syn-MNIST**: based on [MNIST](http://yann.lecun.com/exdb/mnist/) (images shape: 70000×784, labels: 70000×1)  
+- **Syn-Fashion-MNIST**: based on [Fashion-MNIST] (images shape: 70000×784, labels: 70000×1)  
+- **Syn-FER-2013**: based on [FER-2013] (images shape: 35882×2304, labels: 35882×1)  
 
 All classes follow the original dataset’s class assignments.
 
@@ -69,10 +69,14 @@ Syn-Datasets/
  ├─ Syn-FER-2013_imgs.csv
  └─ Syn-FER-2013_labels.csv
 
-
-@article{your_paper_2025,
-  title   = {Dataset Construction Using Item Response Theory for Educational Machine Learning Competitions},
-  author  = {Your Name and Coauthors},
-  journal = {Journal or Conference Name},
-  year    = {2025},
+## Citation
+If you use these datasets in your publication, please cite:
+```latex
+@article{Sakabe:IEEE:2025,
+  title     = {Dataset Construction Using Item Response Theory for Educational Machine Learning Competitions},
+  author    = {Sakabe, Takeaki and Sakurai, Yuko and Tsutsumi, Emiko and Oyama, Satoshi},
+  journal   = {IEEE Access},
+  year      = {2025},
+  publisher = {IEEE}
 }
+```
