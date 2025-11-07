@@ -54,7 +54,7 @@ i = 100
 plt.imshow(imgs.reshape(imgs.shape[0], 28, 28)[i], cmap='gray', vmin=0, vmax=255)
 plt.title(f"Label: {labels[i][0]}")
 plt.show()
-
+```
 
 Syn-Datasets/
  ├─ Syn-MNIST_imgs.csv
