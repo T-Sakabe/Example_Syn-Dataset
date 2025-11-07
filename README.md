@@ -48,9 +48,6 @@ import matplotlib.pyplot as plt
 imgs = pd.read_csv("Syn-MNIST_imgs.csv", header=None).values
 labels = pd.read_csv("Syn-MNIST_labels.csv", header=None).values
 
-print(f"Images shape: {imgs.shape}")
-print(f"Labels shape: {labels.shape}")
-
 # Display a sample image
 index = 0
 image = imgs[index].reshape(28, 28)
@@ -60,14 +57,6 @@ plt.imshow(image, cmap="gray", vmin=0, vmax=255)
 plt.title(f"Label: {label}")
 plt.show()
 ```
-
-Syn-Datasets/
- ├─ Syn-MNIST_imgs.csv
- ├─ Syn-MNIST_labels.csv
- ├─ Syn-Fashion-MNIST_imgs.csv
- ├─ Syn-Fashion-MNIST_labels.csv
- ├─ Syn-FER-2013_imgs.csv
- └─ Syn-FER-2013_labels.csv
 
 ## Citation
 If you use these datasets in your publication, please cite:
