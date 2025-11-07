@@ -32,3 +32,42 @@ MD5 checksums and detailed links may be given here when available.
 The class labels follow the original dataset mapping:
 
 ### Syn-MNIST / Syn-Fashion-MNIST (0-9):
+(*Insert descriptive class names for Fashion-MNIST if desired.*)
+
+### Syn-FER-2013:
+(*Example mapping — adjust if your research uses a different mapping.*)
+
+## Usage Example
+Here is how to load and display images in Python:
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+imgs = pd.read_csv("Syn-MNIST_imgs.csv", sep=',', header=None).values
+labels = pd.read_csv("Syn-MNIST_labels.csv", sep=',', header=None).values
+
+print("Images shape:", imgs.shape)
+print("Labels shape:", labels.shape)
+
+i = 100
+plt.imshow(imgs.reshape(imgs.shape[0], 28, 28)[i], cmap='gray', vmin=0, vmax=255)
+plt.title(f"Label: {labels[i][0]}")
+plt.show()
+
+
+Syn-Datasets/
+ ├─ Syn-MNIST_imgs.csv
+ ├─ Syn-MNIST_labels.csv
+ ├─ Syn-Fashion-MNIST_imgs.csv
+ ├─ Syn-Fashion-MNIST_labels.csv
+ ├─ Syn-FER-2013_imgs.csv
+ └─ Syn-FER-2013_labels.csv
+
+
+@article{your_paper_2025,
+  title   = {Dataset Construction Using Item Response Theory for Educational Machine Learning Competitions},
+  author  = {Your Name and Coauthors},
+  journal = {Journal or Conference Name},
+  year    = {2025},
+}
