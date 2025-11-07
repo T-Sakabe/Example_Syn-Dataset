@@ -1,1 +1,34 @@
-# Example_Syn-Dataset
+# Syn-Datasets (Syn-MNIST, Syn-Fashion-MNIST, Syn-FER-2013)
+
+## Overview
+“Syn-Datasets” provide synthetic image-classification datasets generated via Item Response Theory (IRT).  
+They are designed as drop-in replacements/enhancements for the original datasets:
+- **Syn-MNIST**: based on MNIST (images shape: 70000×784, labels: 70000×1)  
+- **Syn-Fashion-MNIST**: based on Fashion-MNIST (images shape: 70000×784, labels: 70000×1)  
+- **Syn-FER-2013**: based on FER-2013 (images shape: 35882×2304, labels: 35882×1)  
+
+All classes follow the original dataset’s class assignments.
+
+## Why we created these datasets
+- Original datasets (MNIST, Fashion-MNIST, FER-2013) are widely used benchmarks—but have limitations when evaluating model difficulty, robustness, or comparative algorithm performance under controlled difficulty settings.  
+- By leveraging IRT, each image (item) is associated with difficulty/discrimination parameters, and each synthetic “learner” (model) ability parameter θ is simulated, enabling more nuanced performance analyses.  
+- These Syn-Datasets enable researchers and educators to:  
+  * explore model performance across item-difficulty spectra  
+  * study algorithm robustness with controlled item parameters  
+  * use for competitions/education where item-response modelling is relevant.
+
+## Get the Data
+Each dataset is available as CSV files:
+| Dataset            | Images file                        | Labels file                        |
+|--------------------|-----------------------------------|------------------------------------|
+| Syn-MNIST          | `Syn-MNIST_imgs.csv`              | `Syn-MNIST_labels.csv`             |
+| Syn-Fashion-MNIST  | `Syn-Fashion-MNIST_imgs.csv`      | `Syn-Fashion-MNIST_labels.csv`     |
+| Syn-FER-2013       | `Syn-FER-2013_imgs.csv`           | `Syn-FER-2013_labels.csv`          |
+
+Example download using GitHub repository or direct link (if provided).  
+MD5 checksums and detailed links may be given here when available.
+
+## Labels
+The class labels follow the original dataset mapping:
+
+### Syn-MNIST / Syn-Fashion-MNIST (0-9):
