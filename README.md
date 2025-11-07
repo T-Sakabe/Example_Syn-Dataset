@@ -1,11 +1,10 @@
 # Syn-Datasets (Syn-MNIST, Syn-Fashion-MNIST, Syn-FER-2013)
 
-## Overview
 **Syn-Datasets** are image datasets automatically generated using a framework proposed in [Dataset Construction Using Item Response Theory for Educational Machine Learning Competitions](https://ieeexplore.ieee.org/abstract/document/11045924). This framework combines **Item Response Theory (IRT)** with a **Conditional Variational Autoencoder (CVAE)** to create datasets that can more accurately evaluate the performance differences among machine learning (ML) models.
+Here's an Overview of the proposed dataset generation framework:
 
 <p align="center">
   <img src="./image/Framework_Overview.png" alt="Overview of the proposed IRT+CVAE framework" width="600"><br>
-  <em>Figure 1. Overview of the proposed dataset generation framework</em>
 </p>
 
 Each Syn-Dataset is an enhanced version of an existing benchmark dataset, designed to maintain the original structure:
@@ -28,7 +27,6 @@ Below is an example of generated Syn-MNIST images with specified difficulty and 
 
 <p align="center">
   <img src="./image/Syn-MNIST_Examples.png" alt="Examples of Syn-MNIST generated images by difficulty and discrimination" width="600"><br>
-  <em>Figure 2. Examples of generated Syn-MNIST images (Specified difficulty and discrimination)</em>
 </p>
 
 ## Get the Data
